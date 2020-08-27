@@ -8,10 +8,525 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         />
+        <link rel="stylesheet" href="/vendor/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/styles//style.css" />
         <title>GreatWeb Best E-commerce Theme</title>
     </head>
     <body>
-        <h1>Hello</h1>
+        <div class="announcement container-fluid">
+            <p class="px-2">
+                Get Up to <strong>40% OFF</strong> New-Season Styles
+                <span class="announcement__limited">* Limited time only</span>
+            </p>
+        </div>
+
+        <header class="header container">
+            <div class="header__logoWrapper">
+                <img src="/assets/logo.png" alt="greatweb ecommerce" />
+            </div>
+
+            <div class="header__searchWrapper">
+                <input
+                    type="text"
+                    class="header__searchInput"
+                    placeholder="Search..."
+                />
+                <select class="header__searchSelect" name="" id="">
+                    <option class="header__selectOption" value="">
+                        All Categories
+                    </option>
+                    <option class="header__selectOption" value="">
+                        Fashion
+                    </option>
+                    <option class="header__selectOption" value="">
+                        Electronics
+                    </option>
+                </select>
+                <i class="header__searchIcon fas fa-search"></i>
+            </div>
+            <div class="header__contact">
+                <i class="header__contact--icon fas fa-phone-alt"></i>
+                <div>
+                    <small>CALL US NOW</small>
+                    <p class="header__contact--number">+123 5678 890</p>
+                </div>
+            </div>
+            <div class="header__iconMenu">
+                <i class="header__iconMenu--icon far fa-user"></i>
+                <i class="header__iconMenu--icon far fa-heart"></i>
+                <i class="header__iconMenu--icon fas fa-shopping-bag"></i>
+            </div>
+        </header>
+
+        <nav class="nav container">
+            <ul class="nav__mainMenu">
+                <li class="nav__mainMenu--item nav__mainMenu--itemActive">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="nav__mainMenu--item">
+                    <a href="#">SHOP</a>
+                </li>
+                <li class="nav__mainMenu--item">
+                    <a href="#">PAGES</a>
+                </li>
+                <li class="nav__mainMenu--item">
+                    <a href="#">BLOG</a>
+                </li>
+                <li class="nav__mainMenu--item">
+                    <a href="#">CONTACT US</a>
+                </li>
+            </ul>
+            <ul class="nav__extraMenu">
+                <li class="nav__extraMenu--item">
+                    <a href="#">SPECIAL OFFER</a>
+                </li>
+                <li class="nav__extraMenu--item">
+                    <a href="#">BEST DEALS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobileMenu">
+            <div class="mobileMenu__categories">
+                <i class="mobileMenu__icon fas fa-bars"></i>
+                <p class="mobileMenu__title">Categories</p>
+            </div>
+            <div class="mobileMenu__wishlist">
+                <i class="mobileMenu__icon far fa-heart"></i>
+                <p class="mobileMenu__title">Your Wishlist</p>
+            </div>
+            <div class="mobileMenu__cart">
+                <i class="mobileMenu__icon fas fa-shopping-bag"></i>
+                <p class="mobileMenu__title">Your Cart</p>
+            </div>
+            <div class="mobileMenu__user">
+                <i class="mobileMenu__icon far fa-user"></i>
+                <p class="mobileMenu__title">User Account</p>
+            </div>
+        </div>
+
+        <div class="hero container">
+            <div class="hero__categories">
+                <ul class="hero__categories--list">
+                    <li class="hero__categories--item">
+                        <h3>ALL CATEGORIES</h3>
+                    </li>
+
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Video Games</a
+                        >
+                    </li>
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Television</a
+                        >
+                    </li>
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Digital Cameras</a
+                        >
+                    </li>
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Headphones</a
+                        >
+                    </li>
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Wearable Devices</a
+                        >
+                    </li>
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Game Controllers</a
+                        >
+                    </li>
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >Game Controllers</a
+                        >
+                    </li>
+
+                    <li class="hero__categories--item">
+                        <a class="hero__categories--link" href="#"
+                            >+ More Categories</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__carousel">
+                <div class="hero__carousel--imgWrapper">
+                    <img
+                        src="/assets/carousel-1.jpg"
+                        alt="slide 1"
+                        class="hero__carousel--img"
+                    />
+                </div>
+            </div>
+            <div class="hero__banner">
+                <div class="hero__banner--topWrapper">
+                    <img
+                        src="/assets/banner-top.jpg"
+                        alt="banner top"
+                        class="hero__banner--topImg"
+                    />
+                </div>
+                <div class="hero__banner--bottomWrapper">
+                    <img
+                        src="/assets/banner-bottom.jpg"
+                        alt="banner bottom"
+                        class="hero__banner--bottomImg"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="features container">
+            <div class="features__item">
+                <i class="features__item--icon fas fa-truck"></i>
+                <div>
+                    <h3>Free Shipping</h3>
+                    <p>On all orders over $75.00</p>
+                </div>
+            </div>
+            <div class="features__item">
+                <i class="features__item--icon fas fa-box-open"></i>
+                <div>
+                    <h3>Free Returns</h3>
+                    <p>Returns are free within 9 days</p>
+                </div>
+            </div>
+            <div class="features__item">
+                <i class="features__item--icon fas fa-credit-card"></i>
+                <div>
+                    <h3>Support 24/7</h3>
+                    <p>Contact us 24 hours a day</p>
+                </div>
+            </div>
+            <div class="features__item">
+                <i class="features__item--icon fas fa-user-shield"></i>
+                <div>
+                    <h3>100% Payment Secured</h3>
+                    <p>Your payment are safe with us.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="featured container">
+            <div class="featured__sectionTitle">
+                <h2>Featured Products</h2>
+
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <ul class="featured__list swiper-wrapper">
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="featured__item--price">P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="featured__item--price">P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="featured__item swiper-slide">
+                            <div class="featured__item--imgWrapper">
+                                <img
+                                    src="/assets/1.jpg"
+                                    alt="1"
+                                    class="featured__item--img w-100"
+                                />
+                            </div>
+                            <h4 class="featured__item--title">STUDIO DESIGN</h4>
+                            <div class="featured__item--rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>P18.90</h3>
+                            <div class="featured__actions">
+                                <button
+                                    class="featured__actions--addtocart btn btn-primary"
+                                >
+                                    ADD TO CART
+                                </button>
+                                <button
+                                    class="featured__actions--addtowish btn btn-primary"
+                                >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="advertise container">
+            <div class="advertise__imgWrapper">
+                <img
+                    src="/assets/center-banner.jpg"
+                    alt="center banner ads"
+                    class="advertise__img"
+                />
+            </div>
+        </section>
+
+        <script src="/vendor/swiper-bundle.min.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>

@@ -1,0 +1,56 @@
+.mobileMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+
+    @media (min-width: 1003px) {
+        display: none;
+    }
+
+    &__title {
+        @media (max-width: 400px) {
+            display: none;
+        }
+    }
+    &__icon {
+        font-size: 1.2rem;
+    }
+    &__categories {
+        background: $danger;
+        padding: 15px 0 15px 0;
+        color: white;
+        &:hover {
+            background: $danger100;
+        }
+    }
+    &__wishlist {
+        background: $danger;
+        padding: 15px 0 15px 0;
+        color: white;
+        &:hover {
+            background: $danger100;
+        }
+    }
+    &__cart {
+        background: $danger;
+        padding: 15px 0 15px 0;
+        color: white;
+        &:hover {
+            background: $danger100;
+        }
+    }
+    &__user {
+        background: $danger;
+        padding: 15px 0 15px 0;
+        color: white;
+        &:hover {
+            background: $danger100;
+        }
+    }
+}

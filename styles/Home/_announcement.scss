@@ -1,0 +1,10 @@
+.announcement {
+    background: $primary;
+    color: white;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    &__limited {
+        opacity: 0.4;
+        font-weight: 400;
+    }
+}

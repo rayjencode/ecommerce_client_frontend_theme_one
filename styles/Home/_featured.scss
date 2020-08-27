@@ -1,0 +1,64 @@
+.featured {
+    margin-top: 4rem;
+    position: relative;
+    &__list {
+        margin-top: 2rem;
+    }
+    &__item {
+        // border: 1px solid $border;
+        padding: 1rem 1rem 2rem 1rem;
+        cursor: pointer;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius: 4px;
+
+        &:hover {
+            // border: 1px solid $border;
+            outline: 1px solid $border;
+
+            .featured__actions {
+                display: flex;
+                justify-content: space-between;
+                bottom: 13px;
+            }
+        }
+
+        &--title {
+            color: $primary;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        &--rating {
+            color: $warning;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        &--imgWrapper {
+            overflow: hidden;
+        }
+        &--img {
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__actions {
+        position: absolute;
+        display: none;
+
+        // padding-top: 10px;
+        // padding-bottom: 10px;
+        &--addtocart {
+            width: 100%;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        &--addtowish {
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    }
+}

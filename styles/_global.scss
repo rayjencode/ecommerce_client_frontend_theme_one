@@ -6,8 +6,8 @@ font-family: 'Poppins', sans-serif;
 
 html {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    font-family: sans-serif;
 }
 
 *,
@@ -18,23 +18,23 @@ html {
     padding: 0;
 }
 
+[tabindex='-1']:focus {
+    outline: 0 !important;
+}
+
 body {
+    font-family: 'Open Sans', sans-serif;
     background: $mainBG;
     min-height: calc(100vh - 100px);
     width: 100%;
-    color: $gray100;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $gray100;
+    color: $gray;
+    background: #f9f9f9;
 }
 
 hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow: visible;
     background: $gray;
     border: none;
     height: 1px;
@@ -45,10 +45,50 @@ a {
     text-decoration: none;
 }
 
-ul {
+a:hover {
+    text-decoration: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+ol,
+ul,
+dl {
+    margin: 0;
     list-style: none;
 }
 
 a {
     color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 80%;
 }

@@ -1,0 +1,90 @@
+.header {
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+    display: grid;
+    grid-template-columns: auto 1fr 170px 150px;
+    grid-gap: 50px;
+
+    @media (max-width: 1003px) {
+        grid-template-columns: auto 1fr 170px;
+    }
+
+    @media (max-width: 803px) {
+        grid-template-columns: auto 1fr;
+    }
+
+    @media (max-width: 586px) {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    &__logoWrapper {
+        @media (max-width: 586px) {
+            text-align: center;
+        }
+    }
+
+    &__searchWrapper {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        background: $gray100;
+        border-radius: 50px;
+        padding-right: 1rem;
+        max-height: 50px;
+    }
+    &__searchInput {
+        background: $gray100;
+        margin-left: 1.7rem;
+        margin-right: 1rem;
+        border-radius: 50px;
+        padding: 0.7rem;
+        border: none;
+        font-size: 1rem;
+        color: $darkGray;
+    }
+    &__searchIcon {
+        font-size: 1.3rem;
+        color: inherit;
+        cursor: pointer;
+    }
+    &__searchSelect {
+        font-size: 1rem;
+        border: none;
+        background: $gray100;
+        color: $gray;
+        width: 120px;
+        margin-right: 20px;
+        cursor: pointer;
+        @media (max-width: 429px) {
+            display: none;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 803px) {
+            display: none;
+        }
+        &--icon {
+            font-size: 2rem;
+        }
+        &--number {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+    &__iconMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1003px) {
+            display: none;
+        }
+        &--icon {
+            font-size: 1.7rem;
+        }
+    }
+}

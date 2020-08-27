@@ -1,0 +1,90 @@
+.hero {
+    display: grid;
+    grid-template-columns: 240px 2.2fr 1fr;
+    grid-gap: 12px;
+
+    @media (max-width: 1003px) {
+        grid-template-columns: 2.2fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 500px) {
+        grid-gap: 10px;
+    }
+    &__categories {
+        @media (max-width: 1003px) {
+            display: none;
+        }
+
+        &--list {
+            background: white;
+            border: 1px solid #eaeaea;
+            border-top-color: rgb(234, 234, 234);
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-right-color: rgb(234, 234, 234);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-bottom-color: rgb(234, 234, 234);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: rgb(234, 234, 234);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            li {
+                &:first-child {
+                    background: $primary;
+                    color: white;
+                }
+                &:last-child {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &--item {
+            padding: 1rem;
+            cursor: pointer;
+        }
+        &--link {
+            color: $darkGray;
+        }
+    }
+    &__carousel {
+        &--imgWrapper {
+        }
+        &--img {
+            width: 100%;
+        }
+    }
+    &__banner {
+        @media (max-width: 500px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        @media (max-width: 400px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &--topImg {
+            width: 100%;
+        }
+        &--bottomImg {
+            margin-top: 5px;
+            width: 100%;
+            @media (max-width: 500px) {
+                margin-top: 0;
+            }
+        }
+    }
+}

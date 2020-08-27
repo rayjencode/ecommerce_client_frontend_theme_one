@@ -1,0 +1,52 @@
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    font-weight: 600;
+    @media (max-width: 686px) {
+        display: none;
+    }
+    &__mainMenu {
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid $border;
+        padding: 1rem 0 1rem 0;
+
+        &--item {
+            margin-right: 30px;
+            transition: 2s;
+            &:hover {
+                &::before {
+                    content: '';
+                    position: relative;
+                    display: block;
+                }
+                &::after {
+                    content: '';
+                    position: relative;
+                    top: -35px;
+                    border-top: 3.8px solid $primary;
+                    display: block;
+                }
+            }
+        }
+
+        &--itemActive {
+            &::after {
+                content: '';
+                position: relative;
+                top: -35px;
+                border-top: 3.8px solid $primary;
+                display: block;
+            }
+        }
+    }
+    &__extraMenu {
+        display: flex;
+        justify-content: flex-end;
+        border-top: 1px solid $border;
+        padding: 1rem 0 1rem 0;
+        &--item {
+            margin-left: 30px;
+        }
+    }
+}
