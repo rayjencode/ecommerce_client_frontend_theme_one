@@ -1,17 +1,68 @@
 .featured {
     margin-top: 4rem;
+    padding-top: 4rem;
     position: relative;
+    background: white;
+    &__sectionTitle {
+        margin-bottom: 2rem;
+    }
+    &__container {
+        padding-bottom: 3rem;
+        border-top: 1px solid $border;
+        // margin-bottom: 2rem;
+    }
     &__list {
         margin-top: 2rem;
+
+        // padding-top: 2rem;
+    }
+    &__itemWrapper {
+        padding: 1rem 1rem 2rem 1rem;
     }
     &__item {
         // border: 1px solid $border;
-        padding: 1rem 1rem 2rem 1rem;
+        // padding: 1rem 1rem 2rem 1rem;
         cursor: pointer;
         margin-left: 3px;
         margin-right: 3px;
         border-radius: 4px;
+        // &--active {
+        // &::after {
+        //     content: '';
+        //     position: relative;
+        //     top: -338px;
+        //     border-top: 3.8px solid $primary;
+        //     display: block;
+        // }
 
+        // @media (min-width: 1400px) {
+        //     &::after {
+        //         content: '';
+        //         position: relative;
+        //         top: -338px;
+        //         border-top: 3.8px solid $primary;
+        //         display: block;
+        //     }
+        // }
+        // @media (min-width: 900px) {
+        //     &::after {
+        //         content: '';
+        //         position: relative;
+        //         top: -360px;
+        //         border-top: 3.8px solid $primary;
+        //         display: block;
+        //     }
+        // }
+        // }
+        // &:hover {
+        //     &::after {
+        //         content: '';
+        //         position: relative;
+        //         top: -338px;
+        //         border-top: 3.8px solid $primary;
+        //         display: block;
+        //     }
+        // }
         &:hover {
             // border: 1px solid $border;
             outline: 1px solid $border;
@@ -19,7 +70,7 @@
             .featured__actions {
                 display: flex;
                 justify-content: space-between;
-                bottom: 13px;
+                bottom: 17px;
             }
         }
 
@@ -55,6 +106,9 @@
             margin-right: 10px;
             cursor: pointer;
             border-radius: 3px;
+            @media (max-width: 400px) {
+                font-size: 0.7rem;
+            }
         }
         &--addtowish {
             cursor: pointer;

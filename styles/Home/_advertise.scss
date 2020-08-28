@@ -1,4 +1,7 @@
 .advertise {
     margin-top: 4rem;
     cursor: pointer;
+    &__img {
+        width: 100%;
+    }
 }
