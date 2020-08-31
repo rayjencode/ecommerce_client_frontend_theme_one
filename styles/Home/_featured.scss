@@ -9,6 +9,7 @@
     &__container {
         padding-bottom: 3rem;
         border-top: 1px solid $border;
+        overflow-x: hidden;
         // margin-bottom: 2rem;
     }
     &__list {

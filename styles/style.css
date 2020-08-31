@@ -934,6 +934,7 @@ small {
 .featured__container {
   padding-bottom: 3rem;
   border-top: 1px solid #e0e0e0;
+  overflow-x: hidden;
 }
 
 .featured__list {
